@@ -18,7 +18,7 @@ mdata$Global_active_power <- as.numeric(mdata$Global_active_power)
 
 ## Plot lines. To do this I add new lines as new parameters to the plot
 dev.new()
-png("./ExData_Plotting1/plot3.png", width = 480, height = 480)
+png("./ExData_Plotting1/plot3.png", width = 480, height = 480, bg = "transparent")
 yrange <- range(c(mdata$Sub_metering_1, mdata$Sub_metering_2, mdata$Sub_metering_3))
 with(mdata, plot(DateTime, Sub_metering_1, type = "l",
                  xlab = "", ylab = "Energy sub metering", ylim = yrange, col = "black",

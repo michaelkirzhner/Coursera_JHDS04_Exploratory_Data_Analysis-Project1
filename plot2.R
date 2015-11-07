@@ -18,7 +18,7 @@ mdata$Global_active_power <- as.numeric(mdata$Global_active_power)
 
 ## Plot line
 dev.new()
-png("./ExData_Plotting1/plot2.png", width = 480, height = 480)
+png("./ExData_Plotting1/plot2.png", width = 480, height = 480, bg = "transparent")
 with(mdata, plot(DateTime, Global_active_power, type = "l",
                  xlab = "",
                  ylab = "Global Active Power (killowatts)",

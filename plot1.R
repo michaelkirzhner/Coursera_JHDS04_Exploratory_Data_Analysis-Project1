@@ -18,7 +18,7 @@ mdata <- mutate(mdata, DateTime = dmy_hms(paste(mdata$Date, mdata$Time)))
 
 ## Plot histogram
 dev.new()
-png("./ExData_Plotting1/plot1.png", width = 480, height = 480)
+png("./ExData_Plotting1/plot1.png", width = 480, height = 480, bg = "transparent")
 hist(mdata$Global_active_power,
      xlab = "Global Active Power (killowatts)", ylab = "Frequency", main = "Global Active Power",
      col = "red", cex.axis = 0.75)

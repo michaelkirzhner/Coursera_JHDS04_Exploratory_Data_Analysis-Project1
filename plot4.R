@@ -18,7 +18,7 @@ mdata$Global_active_power <- as.numeric(mdata$Global_active_power)
 
 ## Plot lines. To do this I add new lines as new parameters to the plot
 dev.new()
-png("./ExData_Plotting1/plot4.png", width = 480, height = 480)
+png("./ExData_Plotting1/plot4.png", width = 480, height = 480, bg = "transparent")
 
 ## Setting the graphic devices to have a matrix of plots of 2 by 2
 par(mfrow = c(2,2))
