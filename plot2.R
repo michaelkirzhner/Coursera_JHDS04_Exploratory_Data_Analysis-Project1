@@ -16,9 +16,9 @@ mdata <- mutate(mdata, DateTime = dmy_hms(paste(mdata$Date, mdata$Time)))
 ## Convert Global_active_power to numeric
 mdata$Global_active_power <- as.numeric(mdata$Global_active_power)
 
-## Plot histogram
+## Plot line
 dev.new()
-png("plot2.png", width = 480, height = 480)
+png("./ExData_Plotting1/plot2.png", width = 480, height = 480)
 with(mdata, plot(DateTime, Global_active_power, type = "l",
                  xlab = "",
                  ylab = "Global Active Power (killowatts)",
